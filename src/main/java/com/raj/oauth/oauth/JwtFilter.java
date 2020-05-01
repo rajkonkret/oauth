@@ -13,8 +13,10 @@ public class JwtFilter implements javax.servlet.Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
             throws IOException, ServletException {
+
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
         httpServletRequest.getHeader("authorization");
+        System.out.println(httpServletRequest.getHeader("authorization"));
 
 
     }

@@ -20,6 +20,7 @@ public class OauthApplication {
 		FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
 		filterRegistrationBean.setFilter(new JwtFilter());
 		filterRegistrationBean.setUrlPatterns(Collections.singleton("/api/hello/*"));
+
 		return filterRegistrationBean;
 	}
 }

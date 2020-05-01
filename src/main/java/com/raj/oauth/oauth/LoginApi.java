@@ -12,7 +12,7 @@ import java.util.Date;
 @RestController
 public class LoginApi {
 
-    @PostMapping("/logIn")
+    @PostMapping("/login")
     public String login(@RequestBody User user) throws UnsupportedEncodingException {
 
         System.out.println("Login API");
